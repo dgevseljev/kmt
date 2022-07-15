@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <!-- <link rel="stylesheet" href="fonts/poppins"> -->
+    <title>cart</title>
+</head>
+<body>
+    <div class="wrapper-padding">
+        <header>
+            <div class="logo_wrapper">
+                <h1 class="logo">Kiss my traffic</h1>
+                <div class="line"></div>
+            </div>
+            <div class="buttons">
+                <!-- <button class="btn" id="btn-rules">Правила возврата</button> -->
+                <button class="btn" id="btn-back">Назад</button>
+            </div>    
+        </header>        
+        <div class="title">
+            <div class="title_place">
+                <h2 class="title_name">Корзина</h2>
+            </div>
+            <div class="title_line"></div>
+            <h2 class="title_caption">Подтвердите выбор</h2>
+        </div>
+        
+        <table>
+            <tbody>
+                <tr class="str-product">
+                    <td class="cell-product">name</td>
+                    <td class="cell-product"><button class="btn-count left" id="plus1">+</button><span id="count1">1</span><button class="btn-count right" id="minus1">-</button></td>
+                    <td class="cell-product" id="sum1">1000 ₽</td>
+                </tr>
+                <tr class="str-product">
+                    <td class="cell-product">name</td>
+                    <td class="cell-product"><button class="btn-count left">+</button>1<button class="btn-count right">-</button></td>
+                    <td class="cell-product">1000 ₽</td>
+                </tr>
+                <tr class="str-product low-height">
+                    <td class="cell-empty"></td>
+                    <td class="cell-totalsum">Итого</td>
+                    <td class="cell-totalsum">2000 ₽</td>
+                </tr>
+            </tbody>
+        </table> 
+        <div class="rules-header">
+            <div class="rules-caption">Правила возврата</div>
+            <div class="arrow up"></div>
+        </div>
+        <div class="title">
+            <div class="title_place">
+                <h2 class="title_name">e-mail</h2>
+            </div>
+            <div class="title_line"></div>
+            <h2 class="title_caption mail-form-caption">Укажите Ваш e-mail<br>На него мы вышлем данные о покупке. Мы не будем рассылать спам </h2>
+            <form class="mail-form" action="">
+                <input id="mail" type="email" placeholder="example@gmail.com">
+            </form>
+        </div>
+        <div class="title payment-title-block">
+            <div class="title_place">
+                <h2 class="title_name">Оплата</h2>
+            </div>
+            <div class="title_line"></div>
+            <h2 class="title_caption">Выберите удобный способ оплаты</h2>
+            <div class="payment_wrapper">
+                <div class="payment_container">
+                    <ul class="payment_list">
+                        <li class="payment_way">Qiwi</li>
+                        <li class="payment_way">Webmoney</li>
+                        <li class="payment_way">Карта</li>
+                    </ul>
+                    <div class="payment_current-way"></div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <footer>
+        <div class="footer_content-wrapper">
+            <div class="contacts">
+                <h3 class="contact_title">Телеграм</h3>
+                <p class="contact_body"><a href="" class="footer-link">https://t.me/kiss_my_traffic</a><br>
+                    <a href="" class="footer-link">https://t.me/KMTDAILY</a></p>
+            </div>
+
+            <div class="contacts">
+                <h3 class="contact_title">YouTube</h3>
+                <p class="contact_body"><a href="" class="footer-link">https://youtube.com/kiss_my_traffic</a></p>
+            </div>
+
+            <div class="contacts">
+                <h3 class="contact_title">Правила возврата</h3>
+                <p class="contact_body"><a href="" class="footer-link">по ссылке</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="scripts/scroll.js"></script>  
+<script src="scripts/counter.js"></script>    
+<script src="scripts/rulesArrow.js"></script>    
+<script src="scripts/paymentMenu.js"></script>    
+
+    
